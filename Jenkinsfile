@@ -1,5 +1,5 @@
 pipeline {
-    agent agent {
+    agent {
     label 'devops1-wahyu'
     }
 
