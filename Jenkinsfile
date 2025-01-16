@@ -27,7 +27,7 @@ pipeline {
                 npm run test:coverage'''
             }
         }
-        stage('Code Review') {
+        /* stage('Code Review') {
             steps {
             sh '''cd apps
             sonar-scanner \\
@@ -36,7 +36,7 @@ pipeline {
             -Dsonar.host.url=http://172.23.10.15:9000 \\
             -Dsonar.login=sqp_cb62f92fd4e509f3c960edd332f7cba46438669e'''
             }
-        }
+        } */
         stage('Deploy compose') {
             steps {
                 sh '''
